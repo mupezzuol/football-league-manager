@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: @project.artifactId@
+  app:
+    name: ${spring.application.name}
+server:
+  port: 8080
+management:
+  server:
+    port: 18080
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: "env,beans"
+
+# Spring Log
+logging:
+  level:
+    root: INFO
