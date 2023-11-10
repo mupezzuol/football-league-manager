@@ -12,7 +12,6 @@ management:
     web:
       exposure:
         include: "*"
-        exclude: "env,beans"
 
 # Spring Log
 logging:
