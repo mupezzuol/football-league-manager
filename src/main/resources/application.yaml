@@ -17,3 +17,13 @@ management:
 logging:
   level:
     root: INFO
+
+# Swagger Custom Configs
+spring-doc:
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+    enabled: true
+  api-docs:
+    path: /football-league-manager/v3/api-docs
+    enabled: true

@@ -33,3 +33,8 @@ mvn clean -Pnative spring-boot:build-image
 ```shell
 docker run --rm -p 8080:8080 docker.io/library/football-league-manager:0.0.1
 ```
+
+# How to access Swagger locally?
+
+Just open this [link](http://localhost:8080/swagger-ui/index.html) or access url below:
+- `http://localhost:8080/swagger-ui/index.html`
