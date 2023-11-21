@@ -3,6 +3,23 @@ spring:
     name: @project.artifactId@
   app:
     name: ${spring.application.name}
+  datasource:
+    url: jdbc:postgresql:///football-league-manager
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    generate-ddl: false
+    show-sql: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    table: flyway_schema_history_football_league_manager
 server:
   port: 8080
 management:
