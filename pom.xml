@@ -5,13 +5,13 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.1.5</version>
+		<version>3.3.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
 	<groupId>com.football.league.manager</groupId>
 	<artifactId>football-league-manager</artifactId>
-	<version>0.0.1</version>
+	<version>1.0.0</version>
 	<name>${project.artifactId}</name>
 	<description>The Football League Manager is responsible for controlling all features necessary to manage one league of football.</description>
 
@@ -53,6 +53,11 @@
 		<dependency>
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-database-postgresql</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.postgresql</groupId>
